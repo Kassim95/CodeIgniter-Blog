@@ -4,5 +4,6 @@
     <small class="post-date">Posted on: <?php echo $post['created_at']; ?></small>
     <br>
     <?php echo $post['body']; ?>
-    <p><a href="<?php echo site_url('/posts/'.$post['slug']); ?>">Read More</a></p>
+    <br><br>
+    <p><a class='btn btn-default' href="<?php echo site_url('/posts/'.$post['slug']); ?>">Read More</a></p>
 <?php endforeach; ?>
